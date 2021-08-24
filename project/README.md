@@ -1,5 +1,7 @@
 # Documentation
 
+This is a flask app that allows for users to specify array, left or right fold, and the operation.
+
 To clone repo:
 
 `git clone https://github.com/edmundcheng221/taktile-coding-app.git`
@@ -16,13 +18,19 @@ Run Unit Tests:
 
 * Note that these commands are for macOS. YMMV depending on your OS.
 
-`cd project/`
+Activate environment:
 
 `source env/bin/activate`
 
+Specify app.py:
+
 `export FLASK_APP=app.py`
 
+Enter development environment:
+
 `export FLASK_ENV=development`
+
+Run app:
 
 `flask run`
 
