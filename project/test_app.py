@@ -1,6 +1,7 @@
 import unittest
 from app import *
-
+import functools
+import operator
 
 class TestFold(unittest.TestCase):
 
@@ -40,6 +41,10 @@ class TestFold(unittest.TestCase):
         self.assertEqual(Fold.fold_left(divide, [2, 4, 8]) , 0.0625)
         self.assertEqual(Fold.fold_left(divide, [2, 4, 8], 0) , 0)
 
+    def test_compareReduce(self):
+        expected = functools.reduce(operator.mul,[2,4,6],1)
+        actual = Fold.fold_left(multiply, [2,4,6], 1)
+        self.assertEqual(expected, actual)
 
 if __name__ == "__main__":
     unittest.main()
