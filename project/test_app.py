@@ -1,6 +1,5 @@
 import unittest
 from app import *
-import functools
 
 
 class TestFold(unittest.TestCase):
