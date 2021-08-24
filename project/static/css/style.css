@@ -1,0 +1,14 @@
+#result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+article {
+    margin-left: 20px;
+}

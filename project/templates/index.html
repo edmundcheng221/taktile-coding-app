@@ -4,12 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style.css">
-    <link rel="shortcut icon" type="image/png" href="../static/flask.png"/>
-    <title>Application</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="../static/assets/flask.png"/>
+    <title>Live Coding</title>
 </head>
 <body>
-    <script type="text/javascript" src="../static/index.js"></script>
-    <h1>This is a test</h1>
+    <script type="text/javascript" src="../static/js/index.js"></script>
+    <article>
+        <li>
+            Please pass an array of items into the input field.
+        </li>
+        <li>
+            Make sure you type the array in this exact format: a,b,c.
+        </li>
+        <li>
+            Comma separated, no spaces.
+        </li>
+        <li>
+            Please enter either left or right fold.
+        </li>
+        <li>
+            Type in an operation (add, multiply, subtract, or divide).
+        </li>
+        <li>
+            Make sure the spelling is correct.
+        </li>
+    </article>
+    <div id="content">
+        <form method="POST">
+            <div id="array-item"></div>
+            <label>Array:</label><br>
+            <input name="text" placeholder="a,b,c">
+            <br><br>
+            <label>Left or right fold:</label><br>
+            <input name="fold" placeholder="left or right fold">
+            <br><br>
+            <label>Add, Multiply, Subtract, Divide:</label><br>
+            <input name="operation" placeholder="add,subtract,divide,multiply">
+            <br><br>
+            <input type="submit">
+        </form>
+    </div>
+    <div id="result">{{ result }}</div>
 </body>
 </html>
